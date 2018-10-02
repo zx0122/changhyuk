@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            
+        }
+
+        li {
+            float: left;
+        }
+
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: red;
+        }
+        .non{
+            color: write;
+            border-style:solid;
+            border-width:14px 16px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--<ul>
+        <li><a id="home">HOME</a></li>
+        <li><a id="pro">PROFILE</a></li>
+        <li><a id="hob">HOBBY</a></li>
+        <li><a id="tra">TRAVEL</a></li>
+        <li><a id="gam">GAME</a></li>
+        <li><a id="blog">BLOG</a></li>
+    </ul>
+    -->
+    <ul id="main">
+    <li id="home"><a>HOME</a></li><li id="pro"><a>PROFILE</a></li><li id="hob"><a>HOBBY</a></li><li id="tra"><a>TRAVEL</a></li><li id="gam"><a>GAME</a></li><li id="blog"><a>BLOG</a></li>
+    </ul>
+    <div style="padding-top: 49px; height: 1000px; text-align: center;">
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li#home').on('click',function(){
+                $('div').load('home2.html');
+                document.getElementById('main').innerHTML='<li id="home"><a>HOME</a></li><li id="pro"><a>PROFILE</a></li><li id="hob"><a>HOBBY</a></li><li id="tra"><a>TRAVEL</a></li><li id="gam"><a>GAME</a></li><li id="blog"><a>BLOG</a></li>';
+                document.getElementById('home').innerHTML='<div class="non" style="background-color:tomato; border-color:tomato;">HOME</div>';
+            });
+            $('li#pro').on('click',function(){
+                $('div').load('profile.html');
+                document.getElementById('main').innerHTML='        <li id="home"><a>HOME</a></li><li id="pro"><a>PROFILE</a></li><li id="hob"><a>HOBBY</a></li><li id="tra"><a>TRAVEL</a></li><li id="gam"><a>GAME</a></li><li id="blog"><a>BLOG</a></li>';
+                document.getElementById('pro').innerHTML='<div class="non" style="background-color:dodgerblue; border-color:dodgerblue;">PROFILE</div>';
+            });
+            $('li#hob').on('click',function(){
+                $('div').load('hobby.html');
+                document.getElementById('main').innerHTML='        <li id="home"><a>HOME</a></li><li id="pro"><a>PROFILE</a></li><li id="hob"><a>HOBBY</a></li><li id="tra"><a>TRAVEL</a></li><li id="gam"><a>GAME</a></li><li id="blog"><a>BLOG</a></li>';
+                document.getElementById('hob').innerHTML='<div class="non" style="background-color:#ffff66; border-color:#ffff66;">HOBBY</div>';
+            });
+            $('li#tra').on('click',function(){
+                $('div').load('travel.html');
+                document.getElementById('main').innerHTML='        <li id="home"><a>HOME</a></li><li id="pro"><a>PROFILE</a></li><li id="hob"><a>HOBBY</a></li><li id="tra"><a>TRAVEL</a></li><li id="gam"><a>GAME</a></li><li id="blog"><a>BLOG</a></li>';
+                document.getElementById('tra').innerHTML='<div class="non" style="background-color:greenyellow; border-color:greenyellow;">TRAVEL</div>';
+            });
+            $('li#gam').on('click',function(){
+                $('div').load('home2.html');
+               
+            });
+            $('li#blog').on('click',function(){
+                $('div').load('blog.html');
+                document.getElementById('main').innerHTML='        <li id="home"><a>HOME</a></li><li id="pro"><a>PROFILE</a></li><li id="hob"><a>HOBBY</a></li><li id="tra"><a>TRAVEL</a></li><li id="gam"><a>GAME</a></li><li id="blog"><a>BLOG</a></li>';
+               document.getElementById('blog').innerHTML='<div class="non" style="background-color:white; color:black;border-color:white;">BLOG</div>';
+            });
+        });
+    </script>
+</body>
+</html>

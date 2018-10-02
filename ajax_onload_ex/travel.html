@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            
+        }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: greenyellow;
+        }
+
+
+        ul.hd {
+            margin: 0px;
+            padding: 0;
+            width: 130px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            margin-top: 48px;
+        }
+
+        li.hu a {
+            display: inline-block;
+            color: #000;
+            padding: 10px 11px;
+            text-decoration: none;
+        }
+
+        li.hu a:hover {
+            padding-right: 100px;
+            width: 130px;
+            height: 85px;
+            text-align: center;
+            color: greenyellow;
+        }
+        li#korea a:hover{
+            background-image: url(tavel/japen/2016/02-01~04/image/korea.png);
+            background-size: 100%;
+        }
+        li#japen a:hover{
+            background-image: url(tavel/japen/2016/02-01~04/image/japen.png);
+            background-size: 100%;
+        }
+        li#china a:hover{
+            background-image: url(tavel/japen/2016/02-01~04/image/china.png);
+            background-size: 100%;
+        }
+        body{
+            background-image: url(image/android.png);
+            background-size: 100%;
+        }
+        #non{
+            color: white;
+            margin: 14px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+        *{
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="home2.html">HOME</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="hobby.html">HOBBY</a></li>
+        <li id="non">TRAVEL</li>
+        <li><a href="#news">GAME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        
+    </ul>
+    <ul class="hd">
+       <li id="korea" class="hu"><a href="" onclick="warning()"><h3>Korea</h3></a></li>
+        <li id="japen" class="hu"><a href="tavel/japen/2016/02-01~04/FirstDay.html"><h3>Japen</h3></a></li>
+        <li id="china" class="hu"><a href="" onclick="warning()"><h3>China</h3></a></li>
+    </ul>
+
+    <div style="margin-left: 130px;padding-top: 49px; height: 1000px; text-align: center;">
+        <h1>양창혁의 여행 페이지입니다.</h1>
+        <p style="font-size: 20px;">구경을 원하는 페이지를 선택해주시길 바랍니다.</p>
+
+
+    </div>
+    <script>
+    function warning(){
+        alert("죄송합니다. 아직 구현이 안됐습니다. ㅜㅜ");
+    }
+    </script>
+
+
+</body>
+
+</html>
